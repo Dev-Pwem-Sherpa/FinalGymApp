@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: info.hoang8f:fbutton:1.0.5@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/.gradle/caches/8.9/transforms/c6d91d80683eabdba9d4f8f86fb4fde7/transformed/jetified-fbutton-1.0.5/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/.gradle/caches/8.9/transforms/c6d91d80683eabdba9d4f8f86fb4fde7/transformed/jetified-fbutton-1.0.5/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/.gradle/caches/8.9/transforms/c6d91d80683eabdba9d4f8f86fb4fde7/transformed/jetified-fbutton-1.0.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/.gradle/caches/modules-2/files-2.1/info.hoang8f/fbutton/1.0.5/1e56fe0d8bad86e552b9df1f19cb3efd6c155557/fbutton-1.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/.gradle/caches/modules-2/files-2.1/info.hoang8f/fbutton/1.0.5/164d5d1e301245a37e6f889d708fcb9466e39620/fbutton-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
