@@ -8,12 +8,13 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import info.hoang8f.widget.FButton;
+import com.example.gymfitnessapp.Model.User;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnExercises, btnSetting, btnCalendar;
+    Button btnExercises, btnSetting, btnCalendar, btnViewProfile;
     ImageView btnTraining;
+    User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         btnSetting = findViewById(R.id.btnSetting);
         btnTraining = (ImageView)findViewById(R.id.btnTraining);
         btnCalendar = findViewById(R.id.btnCalender);
+        btnViewProfile = findViewById(R.id.btnViewProfile);
+
+        user = getIntent().getParcelableExtra("user");
 
         btnExercises.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Calendar.class);
                 startActivity(intent);
             }
+        });
+
+        btnViewProfile.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            intent.putExtra("user", user);
+            startActivity(intent);
         });
     }
 }

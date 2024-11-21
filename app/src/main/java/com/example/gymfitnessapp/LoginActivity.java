@@ -52,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (user != null ) {
                     if (user.getPassword().equals(editTextPassword.getText().toString())) {
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        intent.putExtra("user", user);
                         startActivity(intent);
                         finish();
                     }else {

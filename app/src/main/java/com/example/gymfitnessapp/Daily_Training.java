@@ -3,6 +3,7 @@ package com.example.gymfitnessapp;
 import android.os.CountDownTimer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -22,7 +23,7 @@ import pl.droidsonroids.gif.GifImageView;
 
 public class Daily_Training extends AppCompatActivity {
 
-    FButton btnStart;
+    Button btnStart;
     GifImageView detail_gif;
     TextView txtGetReady, txtCountDown, txtTimer, title;
     ProgressBar progressBar;
@@ -40,7 +41,7 @@ public class Daily_Training extends AppCompatActivity {
 
         showPosture();
 
-        btnStart = (FButton)findViewById(R.id.btnStartViewExercise);
+        btnStart = findViewById(R.id.btnStartViewExercise);
         detail_gif = (GifImageView)findViewById(R.id.detail_image);
         txtCountDown = (TextView)findViewById(R.id.txtCountDown);
         txtGetReady = (TextView)findViewById(R.id.txtGetReady);

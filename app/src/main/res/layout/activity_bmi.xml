@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/genderLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:weightSum="2"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/baseline_female_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/baseline_male_24"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/genderLayout"
+        android:id="@+id/sliderView"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_weight="1"
+        android:elevation="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="15dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (CM)"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+            <TextView
+                android:id="@+id/displayHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="36sp"
+                android:text="169"
+                android:textColor="@color/white"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="169"
+                android:max="280"
+                android:progressBackgroundTint="@color/white"
+                android:thumbTint="@color/black"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/anotherlayout"
+        android:layout_below="@id/sliderView"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:weightSum="2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="20dp"
+            >
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_height="20dp"
+                    android:layout_width="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WEIGHT (KG)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/weightText"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="69"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="40dp"
+                        android:layout_gravity="center"
+                        android:elevation="20dp"
+                        >
+                        <TextView
+                            android:id="@+id/plusWeight"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="26sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="+"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="11dp"
+                        android:layout_height="wrap_content"
+                        />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="40dp"
+                        android:elevation="20dp"
+                        >
+                        <TextView
+                            android:id="@+id/minusWeight"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="26sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="-"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nextview"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="20dp"
+            >
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_height="20dp"
+                    android:layout_width="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AGE"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/ageText"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="40dp"
+                        android:elevation="20dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/plusAge"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="26sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="+"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="11dp"
+                        android:layout_height="wrap_content"
+                        />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:cardCornerRadius="40dp"
+                        android:elevation="20dp">
+
+                        <TextView
+                            android:id="@+id/minusAge"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="26sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="-"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/calcuulateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:textColor="@color/white"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

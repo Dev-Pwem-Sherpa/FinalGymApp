@@ -1,5 +1,6 @@
 package com.example.gymfitnessapp.Database;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -42,6 +43,7 @@ public class UserDB extends SQLiteAssetHelper {
                         "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                         "name TEXT NOT NULL," +
                         "email TEXT NOT NULL UNIQUE," +
+                        "bmi TEXT NOT NULL," +
                         "password TEXT NOT NULL)");
                 Log.d("UserDB", "Users table created successfully.");
             } else {
@@ -81,5 +83,15 @@ public class UserDB extends SQLiteAssetHelper {
         String query = String.format("INSERT INTO Users(name, email, password) VALUES('%s', '%s', '%s')",
                 user.getName(), user.getEmail(), user.getPassword());
         sqLiteDatabase.execSQL(query);
+    }
+
+    public boolean updateUser(User user) {
+        SQLiteDatabase sqLiteDatabase = getReadableDatabase();
+        ContentValues args = new ContentValues();
+        args.put("name", user.getName());
+        Log.d("User Name", user.getName());
+        String whereClause = String.format("email = '%s'", user.getEmail());
+        sqLiteDatabase.update("users", args, whereClause, null);
+        return  true;
     }
 }

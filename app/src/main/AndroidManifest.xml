@@ -3,7 +3,7 @@
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
@@ -14,13 +14,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".BMIResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BMiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View"
+            android:exported="false" />
+        <activity
+            android:name=".Utils.ViewProfile"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationActivity"
             android:exported="false" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +49,8 @@
         <activity android:name=".ViewPosture" />
         <activity android:name=".ListExercisesActivity" />
 
-        <receiver android:name=".AlarmNotificationReceiver"
+        <receiver
+            android:name=".AlarmNotificationReceiver"
             android:exported="true"
             android:permission="TODO">
             <intent-filter>
@@ -41,9 +58,9 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -38,7 +38,7 @@ public class Calendar extends AppCompatActivity {
             long timestamp = Long.parseLong(value);
             Date date = new Date(timestamp);
 
-            // Create CalendarDay using the year, month, and day extracted from Date
+            //year, month, and day extracted from Date Create CalendarDay using the
             CalendarDay calendarDay = CalendarDay.from(date.getYear() + 1900, date.getMonth() + 1, date.getDate());
             convertedList.add(calendarDay);
         }
