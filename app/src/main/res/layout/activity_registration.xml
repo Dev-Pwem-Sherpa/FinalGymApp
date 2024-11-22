@@ -140,6 +140,14 @@
             android:padding="12dp"
             android:textColor="#707070"
             android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progress_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            />
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton

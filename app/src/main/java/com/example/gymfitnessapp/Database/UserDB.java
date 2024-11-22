@@ -43,7 +43,7 @@ public class UserDB extends SQLiteAssetHelper {
                         "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                         "name TEXT NOT NULL," +
                         "email TEXT NOT NULL UNIQUE," +
-                        "bmi TEXT NOT NULL," +
+                        "bmi DOUBLE," +
                         "password TEXT NOT NULL)");
                 Log.d("UserDB", "Users table created successfully.");
             } else {
@@ -93,5 +93,23 @@ public class UserDB extends SQLiteAssetHelper {
         String whereClause = String.format("email = '%s'", user.getEmail());
         sqLiteDatabase.update("users", args, whereClause, null);
         return  true;
+    }
+
+    public void deleteTable(String table_name) {
+        if (!table_name.matches("^[a-zA-Z0-9_]+$")) {
+            throw new IllegalArgumentException("Invalid table name");
+        }
+
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
+        sqLiteDatabase.beginTransaction();
+        try {
+            String query = String.format("DROP TABLE IF EXISTS %s;", table_name);
+            sqLiteDatabase.execSQL(query);
+            sqLiteDatabase.setTransactionSuccessful();
+        } catch (Exception e) {
+            e.printStackTrace(); // Log error
+        } finally {
+            sqLiteDatabase.endTransaction();
+        }
     }
 }

@@ -10,6 +10,15 @@ public class User implements Parcelable {
     private String name;
     private String email;
     private String password;
+    private double bmi;
+
+    public double getBmi() {
+        return bmi;
+    }
+
+    public void setBmi(double bmi) {
+        this.bmi = bmi;
+    }
 
     public User() {
 

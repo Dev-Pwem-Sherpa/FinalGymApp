@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: pl.droidsonroids.gif:android-gif-drawable:1.2.29@aar" external-system-id="GRADLE">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/.gradle/caches/8.9/transforms/6c94d4a0316b0f1aa14e49a37907b4ee/transformed/jetified-android-gif-drawable-1.2.29/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/.gradle/caches/8.9/transforms/6c94d4a0316b0f1aa14e49a37907b4ee/transformed/jetified-android-gif-drawable-1.2.29/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/.gradle/caches/8.9/transforms/6c94d4a0316b0f1aa14e49a37907b4ee/transformed/jetified-android-gif-drawable-1.2.29/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/c9fa9b09b4fbe0897420a0705ebb4a07/transformed/jetified-android-gif-drawable-1.2.29/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/8.9/transforms/c9fa9b09b4fbe0897420a0705ebb4a07/transformed/jetified-android-gif-drawable-1.2.29/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/8.9/transforms/c9fa9b09b4fbe0897420a0705ebb4a07/transformed/jetified-android-gif-drawable-1.2.29/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/.gradle/caches/modules-2/files-2.1/pl.droidsonroids.gif/android-gif-drawable/1.2.29/951e8852f44809fa2e5ad1b199d26070b95c3459/android-gif-drawable-1.2.29-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.droidsonroids.gif/android-gif-drawable/1.2.29/951e8852f44809fa2e5ad1b199d26070b95c3459/android-gif-drawable-1.2.29-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/.gradle/caches/modules-2/files-2.1/pl.droidsonroids.gif/android-gif-drawable/1.2.29/cc2a6295afa5a2a95e30fd8d1b82b7c5c2796429/android-gif-drawable-1.2.29-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.droidsonroids.gif/android-gif-drawable/1.2.29/cc2a6295afa5a2a95e30fd8d1b82b7c5c2796429/android-gif-drawable-1.2.29-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

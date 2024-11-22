@@ -1,17 +1,18 @@
 buildscript {
     repositories {
-        google()
+        google() // Make sure this is at the top
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.5.0'
+        classpath 'com.android.tools.build:gradle:8.7.2'
+        classpath 'com.google.gms:google-services:4.4.2' // Latest version
     }
 }
 
 allprojects {
     repositories {
-        google()  // Required for Android dependencies
-        mavenCentral()  // Required for other dependencies
+        google() // Ensure it's at the top
+        mavenCentral()
         maven { url 'https://jitpack.io' }
     }
 }

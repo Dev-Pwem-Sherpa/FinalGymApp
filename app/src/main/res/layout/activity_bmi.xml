@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/app"
+    android:background="@color/colorPrimary"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
@@ -25,6 +25,7 @@
             app:cardCornerRadius="20dp">
 
             <LinearLayout
+                android:id="@+id/genderFemaleLinear"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -60,6 +61,7 @@
             app:cardCornerRadius="20dp">
 
             <LinearLayout
+                android:id="@+id/genderMaleLinear"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -92,7 +94,7 @@
         android:id="@+id/sliderView"
         android:layout_width="match_parent"
         android:layout_height="170dp"
-        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardBackgroundColor="@color/colorAccent"
         android:layout_weight="1"
         android:elevation="20dp"
         android:layout_marginVertical="20dp"
@@ -139,7 +141,7 @@
                 android:progress="169"
                 android:max="280"
                 android:progressBackgroundTint="@color/white"
-                android:thumbTint="@color/black"
+                android:thumbTint="@color/colorPink"
                 />
 
         </LinearLayout>
@@ -157,7 +159,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="180dp"
             android:layout_height="match_parent"
-            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardBackgroundColor="@color/colorAccent"
             android:layout_weight="1"
             android:elevation="20dp"
             android:layout_marginVertical="20dp"
@@ -250,7 +252,7 @@
             android:id="@+id/nextview"
             android:layout_width="170dp"
             android:layout_height="170dp"
-            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardBackgroundColor="@color/colorAccent"
             android:layout_weight="1"
             android:elevation="20dp"
             android:layout_marginVertical="20dp"
@@ -347,12 +349,11 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/red"
-        android:gravity="center">
-
-
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        >
         <TextView
-            android:id="@+id/calcuulateBtn"
+            android:id="@+id/calculateBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Calculate"
